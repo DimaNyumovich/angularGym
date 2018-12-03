@@ -19,7 +19,7 @@ export class ClientComponent implements OnInit {
   @Input() weight: number;
   @Output() trainee = new EventEmitter<string>();
 
-
+  gitTest: number = 777;
 
   constructor() {
   }
