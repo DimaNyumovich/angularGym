@@ -1,0 +1,12 @@
+.client {
+  display: flex;
+  align-items: center;
+  -webkit-justify-content: flex-end;
+  max-width: 50%;
+  margin: 10px;
+  border-bottom: dotted 1px dimgray;
+}
+
+div, button {
+  margin-right: 10px;
+}

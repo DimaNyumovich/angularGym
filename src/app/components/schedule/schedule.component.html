@@ -1,0 +1,10 @@
+<h2>Available time slots</h2>
+<div *ngFor="let item of schedualeTable">
+  <!--<div [ngStyle]="{'color': item.weekDay === 'saturday' ? 'red' : 'black'}">Weekday: {{item.weekDay}}</div>-->
+  <div [ngStyle]="{'color': getColor(item.weekDay)}">Weekday: {{item.weekDay}}</div>
+  <div class="row">Empty slots:
+    <div *ngFor="let slot of item.slots">
+      {{slot}} IST |
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<h2 [appHigtlight]="color" defaultColor="skyblue">Current Client List</h2>
+
+<div>
+  <input type="radio" name="colors" (click)="color='green'">Green
+  <input type="radio" name="colors" (click)="color='chocolate'">shoco
+  <input type="radio" name="colors" (click)="color='cyan'">cyan
+</div>
+
+<h3 [appHigtlight]="color" [ngClass]="{'vipTrainee': trainee1 === 'Peter'}">current training: {{trainee1}}</h3>
+<!--<button (click)="loosWeight()">Loose 1 kg</button>-->
+<!--<button (click)="removeClient()">Remove Ben</button>-->
+<button appToggle (click)="toggleForm()">Add Client</button>
+<app-add-client-form *ngIf="showClientForm" (hideForm)="toggleForm()"></app-add-client-form>
+<!--<app-add-client-form *ngIf="showClientForm" (hideForm)="hideForm($event)"></app-add-client-form>-->
+<app-client *ngFor="let client of clients"
+            (trainee)="recieveName($event)"
+            [color]="color"
+            [client]="client"
+            [weight]="client.weight"
+></app-client>
+
+
+

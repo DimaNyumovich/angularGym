@@ -1,0 +1,17 @@
+<div class="addClientForm">
+  <label for="name">Client's name</label>
+  <input type="text" name="name" [(ngModel)]="name">
+
+  <label for="birthDate">BirthDate</label>
+  <input type="text" name="birthDate" [(ngModel)]="birthDate">
+
+  <label for="weight">Client's weight</label>
+  <input type="number" name="weight" value="80" [(ngModel)]="weight">
+
+  <label for="height">Client's height</label>
+  <input type="number" name="height" value="180" [(ngModel)]="height">
+
+  <br>
+  <button class="badge-danger" type="submit" (click)="saveClient(this)">Save client</button>
+
+</div>
