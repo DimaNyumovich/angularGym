@@ -21,6 +21,7 @@ export class ClientComponent implements OnInit {
 
   gitTest: number = 777;
   gitTest1: number = 777;
+  gitTest2: number = 777;
 
   constructor() {
   }
