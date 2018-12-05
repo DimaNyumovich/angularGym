@@ -12,6 +12,7 @@ import { ScheduleComponent } from './components/schedule/schedule.component';
 import { AddClientFormComponent } from './components/add-client-form/add-client-form.component';
 import { HigtlightDirective } from './directives/higtlight.directive';
 import { ToggleDirective } from './directives/toggle.directive';
+import { SignUpFormComponent } from './components/sign-up-form/sign-up-form.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { ToggleDirective } from './directives/toggle.directive';
     AddClientFormComponent,
     HigtlightDirective,
     ToggleDirective,
+    SignUpFormComponent,
   ],
   imports: [
     BrowserModule,
